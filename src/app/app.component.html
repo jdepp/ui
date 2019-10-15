@@ -1,0 +1,24 @@
+<ngb-carousel *ngIf="images">
+  <ng-template ngbSlide *ngFor="let image of images">
+    <div class="picsum-img-wrapper">
+      <img style="width:100%" [src]="image" alt="Random first slide">
+    </div>
+    <div class="carousel-caption">
+      <!-- <button *ngIf="fullscreen==false" class="button"><img src='../assets/baseline_fullscreen_black_18dp.png' (click)="openFullscreen()"></button>
+      <button *ngIf="fullscreen==true" class="button"><img src='../assets/baseline_fullscreen_exit_black_18dp.png' (click)="closeFullscreen()"></button> -->
+      <!-- <h3>First slide label</h3>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
+    </div>
+  </ng-template>
+</ngb-carousel>
+<!-- <ng-sidebar-container>
+
+  <ng-sidebar [(opened)]="_opened">
+    <p>Sidebar contents</p>
+  </ng-sidebar>
+
+  <div ng-sidebar-content>
+    <button (click)="_toggleSidebar()">Toggle sidebar</button>
+  </div>
+
+</ng-sidebar-container> -->

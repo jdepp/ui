@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.carousel-item {
+  display: block !important;
+  z-index: 1 !important;
+  position: absolute !important;
+  transform: translateX(0%) !important;
+  opacity: 0 !important;
+  transition: opacity 2s ease-in-out, visibility 2s !important;
+  visibility: hidden !important;
+}
+
+.carousel-item.active {
+  position: relative !important;
+  transform: translateX(0) !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
